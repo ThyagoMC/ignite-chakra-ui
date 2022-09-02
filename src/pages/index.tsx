@@ -1,9 +1,11 @@
 import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
 
 export default function Home() {
   return (
     <Flex w="100vw" h="100vh" justify="center" overflowX={"hidden"}>
-      <Flex flexDir={"column"} w={["100%", "100%", "100%", "1440px"]}>
+      <Flex flexDir={"column"} w={"min(100%, 1440px)"}>
         <Flex w="100%" bg="gray.50">
           <Image src="/logo.svg" m={"2rem auto"} alt="logo" />
         </Flex>
@@ -72,6 +74,26 @@ export default function Home() {
             <br />
             Então escolha seu continente
           </Text>
+          <Swiper pagination={true} navigation={true} modules={[Navigation, Pagination]} className="mySwiper">
+            <SwiperSlide>
+              <Image src="/europe.jpg" alt="europe" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src="/asia.jpg" alt="asia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src="/oceania.jpg" alt="oceania" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src="/north-america.jpg" alt="north america" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src="/south-america.jpg" alt="south america" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src="/africa.jpg" alt="africa" />
+            </SwiperSlide>
+          </Swiper>
         </Stack>
       </Flex>
     </Flex>
