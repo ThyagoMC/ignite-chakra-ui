@@ -8,22 +8,22 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
-    "@chakra-ui/core": "^0.8.0",
-    "@chakra-ui/react": "^2.3.1",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "framer-motion": "^7.2.1",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "swiper": "^8.3.2"
-  },
   "devDependencies": {
     "@types/node": "^18.7.13",
     "@types/react": "^18.0.17",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "typescript": "^4.8.2"
+  },
+  "packageManager": "yarn@3.2.3",
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "^7.3.2",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^8.3.2"
   }
 }
