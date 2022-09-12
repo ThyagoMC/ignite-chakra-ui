@@ -26,6 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
               top="38px"
               left="38px"
               onClick={onClickGoBack}
+              cursor={"pointer"}
             />
           )}
           <Image src="/logo.svg" m={"2rem auto"} alt="logo" />

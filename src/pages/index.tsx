@@ -9,8 +9,6 @@ import SwiperContent from "../components/SwiperContinent";
 export default function Home() {
   const [isMin48em] = useMediaQuery("(min-width: 48em)");
 
-  const textShadow = "-2px 0 2px #1F2029, 0 2px  2px #1F2029, 2px 0  2px #1F2029, 0 -2px  2px #1F2029;";
-
   return (
     <Layout>
       <HStack
