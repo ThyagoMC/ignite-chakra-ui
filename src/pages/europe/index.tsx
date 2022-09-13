@@ -1,4 +1,5 @@
-import { Flex, HStack, Image, Stack, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Avatar, Box, Flex, HStack, Image, Stack, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import CityCard from "../../components/CityCard";
 import Layout from "../../components/Layout";
 
 const textShadow = "-2px 0 2px #1F2029, 0 2px  2px #1F2029, 2px 0  2px #1F2029, 0 -2px  2px #1F2029;";
@@ -14,15 +15,22 @@ const Europe = () => {
           backgroundImage="/london.jpg"
           backgroundPosition={"center"}
           backgroundSize="100%"
+          backgroundRepeat={"no-repeat"}
         >
-          <Text position={"absolute"} bottom={"1em"} left={"1em"} fontSize={"4em"} textShadow={textShadow}>
+          <Text
+            position={"absolute"}
+            bottom={"1em"}
+            left={{ base: "5%", md: "1em" }}
+            fontSize={"4em"}
+            textShadow={textShadow}
+          >
             Europa
           </Text>
         </Flex>
         <Flex wrap={"wrap"} justifyContent="space-evenly" paddingTop="40px">
           <Text
             w={{ base: "calc(100% - 2em)", md: "calc(50% - 1.5em)" }}
-            paddingLeft="3em"
+            paddingLeft={{ base: 0, md: "3em" }}
             textAlign="justify"
             fontSize={"1.25em"}
           >
@@ -51,10 +59,39 @@ const Europe = () => {
             </Stack>
           </Flex>
         </Flex>
-        <Stack paddingTop={"40px"}>
+        <Stack padding={"40px 72px"}>
           <Text fontSize="3em">Cidades +100</Text>
-          <Wrap>
-            <WrapItem></WrapItem>
+          <Wrap spacing={8}>
+            <CityCard
+              cityImg="/london2.jpg"
+              cityName="Londres"
+              countryName="Reino Unido"
+              countryFlag="/flags/england.svg"
+            />
+            <CityCard
+              cityImg="/london2.jpg"
+              cityName="Londres"
+              countryName="Reino Unido"
+              countryFlag="/flags/england.svg"
+            />
+            <CityCard
+              cityImg="/london2.jpg"
+              cityName="Londres"
+              countryName="Reino Unido"
+              countryFlag="/flags/england.svg"
+            />
+            <CityCard
+              cityImg="/london2.jpg"
+              cityName="Londres"
+              countryName="Reino Unido"
+              countryFlag="/flags/england.svg"
+            />
+            <CityCard
+              cityImg="/london2.jpg"
+              cityName="Londres"
+              countryName="Reino Unido"
+              countryFlag="/flags/england.svg"
+            />
           </Wrap>
         </Stack>
       </Stack>
